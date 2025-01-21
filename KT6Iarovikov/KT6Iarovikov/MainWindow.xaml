@@ -1,0 +1,24 @@
+﻿<Window x:Class="KT6Iarovikov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KT6Iarovikov"
+        mc:Ignorable="d"
+        Title="ИС Товары для животных" Height="450" Width="800" 
+        MinHeight="650" MinWidth="1000" Icon="Resources/icon.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF76E383">
+            <Label Content="Товары для животных" FontFamily="Comic Sans MS"
+                   FontSize="40" VerticalAlignment="Center"
+                   HorizontalAlignment="Center"></Label>
+            <Image Source="Resources/logo.png" VerticalAlignment="Center"
+                   HorizontalAlignment="Left" Margin="215,0,0,0"></Image>
+        </Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1"></Frame>
+    </Grid>
+</Window>
